@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Container } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
 
-function App() {
+import theme from './Theme';
+import NavBar from './components/NavBar/NavBar';
+import Hero from './components/Hero/Hero';
+import MainContent from './components/MainContent/MainContent';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <NavBar />
+      <Container>
+        <Hero />
+        <MainContent />
+        <About />
+      </Container>
+      <Footer />
+    </ThemeProvider>
   );
 }
 
