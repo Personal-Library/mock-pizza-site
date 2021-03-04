@@ -10,17 +10,17 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <NavBar />
-      <Container>
-        <Hero />
-        <MainContent />
-        <About />
-      </Container>
-      <Footer />
-    </ThemeProvider>
-  );
-}
+	return (
+		<ThemeProvider theme={theme}>
+			<NavBar />
+			<Container>
+				<Hero />
+				<MainContent />
+				<About />
+			</Container>
+			<Footer />
+		</ThemeProvider>
+	);
+};
 
 export default App;
