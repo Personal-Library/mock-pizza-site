@@ -1,7 +1,7 @@
 # Concord Pizza
 
 ## Description
-This website is a mock-up for an imaginary restaurant Concord Pizza in Austin, TX. This website was created in order to gain some familiarity with MaterialUI. 
+This website is a mock-up for an imaginary restaurant Concord Pizza in Austin, TX. This website was created in order to gain some familiarity with MaterialUI and React.
 
 ## Technologies 
 - React
