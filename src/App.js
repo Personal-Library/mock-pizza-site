@@ -1,25 +1,29 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import theme from './Theme';
-import NavBar from './components/NavBar/NavBar';
-import Hero from './components/Hero/Hero';
-import MainContent from './components/MainContent/MainContent';
-import About from './components/About/About';
-import Footer from './components/Footer/Footer';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import MainContent from './components/MainContent';
+import About from './components/About';
+import Footer from './components/Footer';
 
 const App = () => {
 	return (
-		<ThemeProvider theme={theme}>
-			<NavBar />
-			<Container>
-				<Hero />
-				<MainContent />
-				<About />
-			</Container>
-			<Footer />
-		</ThemeProvider>
+		<React.Fragment>
+			<CssBaseline />
+			<ThemeProvider theme={theme}>
+				<NavBar />
+				<Container>
+					<Hero />
+					<MainContent />
+					<About />
+				</Container>
+				<Footer />
+			</ThemeProvider>
+		</React.Fragment>
 	);
 };
 

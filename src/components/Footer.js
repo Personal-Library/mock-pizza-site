@@ -19,19 +19,19 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 		justifyContent: 'center',
 		alignItems: 'flex-start',
-		paddingTop: '2rem',
-		textDecoration: 'none',
+		marginTop: '2rem',
 		[theme.breakpoints.down('xs')]: {
 			alignItems: 'center',
 		},
 	},
 	footerTitle: {
-		paddingBottom: '1rem',
+		marginBottom: '1rem',
 	},
 }));
 
 const Footer = () => {
 	const classes = useStyles();
+
 	return (
 		<Box className={classes.main}>
 			<Container>

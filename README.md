@@ -20,7 +20,11 @@ Enter the project directory
 
 Clone the repository
 
-`git clone https://github.com/anthonybui94/thai-website.git`
+`git@github.com:Personal-Library/mock-pizza-site.git`
+
+Enter the project
+
+`cd mock-pizza-site`
 
 Install dependencies
 
@@ -30,13 +34,7 @@ Install dependencies
 The user can browse and read more about what Concord Pizza has to offer.
 
 ## Contributing
-"fork-and-pull" Git workflow
-1. **Fork** the repo on github
-2. **Clone** the project to your machine
-3. **Commit** changes to your branch
-4. **Push** commits back up to your fork
-5. **Merge** latest changes from upstream
-6. **Pull** request submission
+This project is no longer being maintained. You are welcome to modify and distribute any versions as you please.
 
 ## License
 MIT License

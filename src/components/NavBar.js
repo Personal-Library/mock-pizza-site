@@ -7,8 +7,8 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { Icon } from '@material-ui/core';
-import logo from '../../branding/logo.png';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import logo from '../branding/logo.png';
 
 const useStyles = makeStyles((theme) => ({
 	root: {

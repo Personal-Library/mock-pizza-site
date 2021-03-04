@@ -2,24 +2,26 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Paper, Typography, Box } from '@material-ui/core';
 
-import ownerImage from '../../branding/about';
+import ownerImage from '../branding/about';
 
 const useStyles = makeStyles((theme) => ({
-	main: {},
 	card: {
 		height: '500px',
 		marginTop: '1em',
 		textAlign: 'center',
 	},
-	ownerCard: {
+	photoCard: {
 		backgroundImage: `url(${ownerImage})`,
 		backgroundPosition: 'center',
 		backgroundSize: 'cover',
 	},
 	filter: {
-		background: 'linear-gradient(0deg, #00000088 30%, #FFFFFF44 100%)',
+		background: 'linear-gradient(0deg, #00000088 5%, #FFFFFF20 60%)',
 		width: '100%',
 		height: '100%',
+		'&:hover': {
+			background: 'linear-gradient(0deg, #00000088 20%, #FFFFFF20 60%)',
+		},
 	},
 	flexHero: {
 		flexDirection: 'column',
@@ -45,9 +47,9 @@ const About = () => {
 	const classes = useStyles();
 
 	return (
-		<Grid container spacing={3} className={classes.main}>
+		<Grid container spacing={3}>
 			<Grid item md={7} sm={12} xs={12}>
-				<Paper className={`${classes.card} ${classes.ownerCard}`} elevation={3}>
+				<Paper className={`${classes.card} ${classes.photoCard}`} elevation={3}>
 					<Box display='flex' className={`${classes.filter} ${classes.flexHero}`}>
 						<Typography variant='h2' className={classes.cardHeader}>
 							We are here for you.
@@ -59,7 +61,7 @@ const About = () => {
 				<Paper className={classes.card} elevation={3}>
 					<Box padding='1rem'>
 						<Typography variant='h1' className={classes.aboutUs}>
-							About us
+							About Us
 						</Typography>
 						<Typography variant='p'>
 							Pizza ipsum dolor amet pie sauteed onions garlic parmesan, spinach white pizza meat
@@ -74,7 +76,7 @@ const About = () => {
 							Bianca steak thin crust mushrooms large lasagna, meatball anchovies garlic parmesan
 							pepperoni bacon & tomato mozzarella hawaiian. Bacon & tomato anchovies bacon white
 							pizza, pizza roll mayo parmesan mushrooms pepperoni hawaiian black olives. Buffalo
-							sauce party thin crust ranch personal.
+							sauce party thin crust ranch personal. 🍕
 						</Typography>
 					</Box>
 				</Paper>
